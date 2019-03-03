@@ -11,6 +11,10 @@ build:
     - cd build
     - cmake ..
     - cmake --build .
+  artifacts:
+    paths:
+      - build/
+    expire_in: 1 hour
 
 test:
   stage: test
